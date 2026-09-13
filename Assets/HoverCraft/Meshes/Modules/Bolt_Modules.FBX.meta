@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 5314f6eebfa61c1498c713b3bb0ce564
+timeCreated: 1551961319
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 03_Body1
+    100002: 03_Body2
+    100004: 03_Body3
+    100006: 03_Cockpit1
+    100008: 03_Cockpit2
+    100010: 03_Cockpit3
+    100012: 03_Engine1
+    100014: 03_Engine2
+    100016: 03_Engine3
+    100018: 03_Engine4
+    100020: 03_Engine5
+    100022: 03_Spoiler1
+    100024: 03_Spoiler2
+    100026: 03_Spoiler3
+    100028: 03_Wing1
+    100030: 03_Wing2
+    100032: 03_Wing3
+    100034: 03_Wing4
+    100036: //RootNode
+    400000: 03_Body1
+    400002: 03_Body2
+    400004: 03_Body3
+    400006: 03_Cockpit1
+    400008: 03_Cockpit2
+    400010: 03_Cockpit3
+    400012: 03_Engine1
+    400014: 03_Engine2
+    400016: 03_Engine3
+    400018: 03_Engine4
+    400020: 03_Engine5
+    400022: 03_Spoiler1
+    400024: 03_Spoiler2
+    400026: 03_Spoiler3
+    400028: 03_Wing1
+    400030: 03_Wing2
+    400032: 03_Wing3
+    400034: 03_Wing4
+    400036: //RootNode
+    2300000: 03_Body1
+    2300002: 03_Body2
+    2300004: 03_Body3
+    2300006: 03_Cockpit1
+    2300008: 03_Cockpit2
+    2300010: 03_Cockpit3
+    2300012: 03_Engine1
+    2300014: 03_Engine2
+    2300016: 03_Engine3
+    2300018: 03_Engine4
+    2300020: 03_Engine5
+    2300022: 03_Spoiler1
+    2300024: 03_Spoiler2
+    2300026: 03_Spoiler3
+    2300028: 03_Wing1
+    2300030: 03_Wing2
+    2300032: 03_Wing3
+    2300034: 03_Wing4
+    3300000: 03_Body1
+    3300002: 03_Body2
+    3300004: 03_Body3
+    3300006: 03_Cockpit1
+    3300008: 03_Cockpit2
+    3300010: 03_Cockpit3
+    3300012: 03_Engine1
+    3300014: 03_Engine2
+    3300016: 03_Engine3
+    3300018: 03_Engine4
+    3300020: 03_Engine5
+    3300022: 03_Spoiler1
+    3300024: 03_Spoiler2
+    3300026: 03_Spoiler3
+    3300028: 03_Wing1
+    3300030: 03_Wing2
+    3300032: 03_Wing3
+    3300034: 03_Wing4
+    4300000: 03_Engine3
+    4300002: 03_Cockpit1
+    4300004: 03_Spoiler1
+    4300006: 03_Spoiler3
+    4300008: 03_Engine2
+    4300010: 03_Engine5
+    4300012: 03_Wing1
+    4300014: 03_Wing2
+    4300016: 03_Wing3
+    4300018: 03_Wing4
+    4300020: 03_Spoiler2
+    4300022: 03_Engine4
+    4300024: 03_Body2
+    4300026: 03_Cockpit2
+    4300028: 03_Body3
+    4300030: 03_Cockpit3
+    4300032: 03_Body1
+    4300034: 03_Engine1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: a2a83b3a9de04a34ba22ec55e5227c60, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
