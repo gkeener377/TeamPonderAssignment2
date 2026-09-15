@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed = 60f;
+    public float turnSpeed = 50f;
     void Start()
     {
     }
-
-    // Update is called once per frame
     void Update()
     {
         // Hint: The global static variable "Terrain.activeTerrain" 
@@ -17,15 +16,29 @@ public class Movement : MonoBehaviour
         // other scripts.
         Terrain terrain = Terrain.activeTerrain;
 
+        //Translate or Rotate position of craft depending on keys pressed
+        if (Input.GetKey(KeyCode.W))
+            transform.Translate(0, 0, speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.S))
+            transform.Translate(0, 0, -(speed) * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(0, -(turnSpeed) * Time.deltaTime, 0);
+
         Vector3 position = transform.position;
-        
+
+        //Puts the hover in hovercraft, setting a value to how high the craft sits above the terrain
+        float hoverHeight = 5.0f;
+
+        // Tracks the position of the terrain so the hovercraft can adapt as it moves
+        float terrainHeight = terrain.SampleHeight(position);
+
+        //Takes the set hover height and adjusts the craft's position to match as it moves across terrain
+        position.y = terrainHeight + hoverHeight;
+
         // set the game object's translation (not an increment)
         transform.position = position;
 
-        // translate by 0.1m on Z axis each frame for as long as
-        // the space bar is held down
-        if (Input.GetKey (KeyCode.Space))
-            // increment the game object's translation
-            transform.Translate(0, 0, 0.1f);
     }
 }
