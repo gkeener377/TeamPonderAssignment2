@@ -1,44 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Hovercraft Performance Stats")]
     public float speed = 60f;
     public float turnSpeed = 50f;
-    void Start()
-    {
-    }
+    public float hoverHeight = 5.0f;
+
+    [Header("Hover Vibration Effect")]
+    public float quiverAmount = 0.05f;
+    public float quiverSpeed = 15f;
+
     void Update()
     {
-        // Hint: The global static variable "Terrain.activeTerrain" 
-        // may be helpful or have useful methods for user here or in
-        // other scripts.
-        Terrain terrain = Terrain.activeTerrain;
-
-        //Translate or Rotate position of craft depending on keys pressed
-        if (Input.GetKey(KeyCode.W))
-            transform.Translate(0, 0, speed * Time.deltaTime);
-        if (Input.GetKey(KeyCode.S))
-            transform.Translate(0, 0, -(speed) * Time.deltaTime);
+        // Steering
         if (Input.GetKey(KeyCode.D))
-            transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
         if (Input.GetKey(KeyCode.A))
-            transform.Rotate(0, -(turnSpeed) * Time.deltaTime, 0);
+            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
-        Vector3 position = transform.position;
+        // Forward / Backward
+        float moveDistance = 0f;
+        if (Input.GetKey(KeyCode.W))
+            moveDistance += speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.S))
+            moveDistance -= speed * Time.deltaTime;
 
-        //Puts the hover in hovercraft, setting a value to how high the craft sits above the terrain
-        float hoverHeight = 5.0f;
+        Vector3 newPosition = transform.position + (transform.forward * moveDistance);
 
-        // Tracks the position of the terrain so the hovercraft can adapt as it moves
-        float terrainHeight = terrain.SampleHeight(position);
+        // Terrain Hovering
+        Terrain terrain = Terrain.activeTerrain;
+        if (terrain != null)
+        {
+            float terrainHeight = terrain.SampleHeight(newPosition) + terrain.transform.position.y;
+            float quiver = Mathf.Sin(Time.time * quiverSpeed) * quiverAmount;
+            newPosition.y = terrainHeight + hoverHeight + quiver;
+        }
 
-        //Takes the set hover height and adjusts the craft's position to match as it moves across terrain
-        position.y = terrainHeight + hoverHeight;
-
-        // set the game object's translation (not an increment)
-        transform.position = position;
-
+        transform.position = newPosition;
     }
 }
