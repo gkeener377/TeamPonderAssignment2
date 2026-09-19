@@ -139,16 +139,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 29.5
       objectReference: {fileID: 0}
     - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.33739
       objectReference: {fileID: 0}
     - target: {fileID: 4730806378366768, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -563,8 +575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
-  turnSpeed: 50
+  speed: 30
+  turnSpeed: 100
   hoverHeight: 5
   quiverAmount: 0.05
   quiverSpeed: 15
@@ -810,16 +822,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.8385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.2
+      value: 58.5
       objectReference: {fileID: 0}
     - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 33.6
       objectReference: {fileID: 0}
     - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.91928
       objectReference: {fileID: 0}
     - target: {fileID: 4884808725003194, guid: 80406230cfa429e4395c25845de49413, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1089,8 +1113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
-  turnSpeed: 50
+  speed: 200
+  turnSpeed: 25
   hoverHeight: 5
   quiverAmount: 0.05
   quiverSpeed: 15
