@@ -1,4 +1,15 @@
 ______________________________________________________
+GAME 351 Fall 2026
+Assignment 2
+
+Group Members: 
+Alex Fontana
+Gleen Keener
+Michael Arvizu
+Michael Maher
+
+Player movement is WASD
+
 Program 2 Template (Starter Code) - v. 1.0
 School of Information, University of Arizona 
 July 18, 2022
