@@ -9,6 +9,7 @@ Michael Arvizu
 Michael Maher
 
 Player movement is WASD
+Switch hovercraft with C
 
 Program 2 Template (Starter Code) - v. 1.0
 School of Information, University of Arizona 
