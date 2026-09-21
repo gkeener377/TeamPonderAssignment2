@@ -8,6 +8,7 @@ Gleen Keener
 Michael Arvizu
 Michael Maher
 
+Controls:
 Player movement is WASD
 Switch hovercraft with C
 
@@ -58,3 +59,6 @@ Freeware media assets were used from the following sources:
 (3) https://www.gameartguppy.com/
 (4) https://www.videvo.net/royalty-free-sound-effects/
 (5) https://freesound.org/search/
+
+The Following Packages were used from the Unity Asset Store:
+https://assetstore.unity.com/packages/vfx/trails-vfx-urp-242574
