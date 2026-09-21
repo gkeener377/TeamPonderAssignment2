@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -988,7 +988,7 @@ Terrain:
   m_GameObject: {fileID: 961604638}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 0}
+  m_TerrainData: {fileID: 15600000, guid: e7b1fcb0ac8a69147bd09db9fde1dcda, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -1231,11 +1231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  turnSpeed: 100
+  speed: 100
+  turnSpeed: 200
   hoverHeight: 5
   quiverAmount: 0.05
   quiverSpeed: 15
+  tiltSpeed: 5
 --- !u!4 &1208382369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4508180653693434, guid: eb723b638af6ddf47a04811d4e1dc31f, type: 3}
@@ -1963,11 +1964,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b397197f015549b4f9a0bae7b7f2f5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
-  turnSpeed: 50
-  hoverHeight: 5
+  speed: 150
+  turnSpeed: 150
+  hoverHeight: 7.37
   quiverAmount: 0.05
   quiverSpeed: 15
+  tiltSpeed: 3.09
 --- !u!1 &1649516485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,10 +2783,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
-  turnSpeed: 25
+  turnSpeed: 100
   hoverHeight: 5
   quiverAmount: 0.05
   quiverSpeed: 15
+  tiltSpeed: 5
 --- !u!1 &1918752840
 GameObject:
   m_ObjectHideFlags: 0
